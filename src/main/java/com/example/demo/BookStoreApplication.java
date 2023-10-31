@@ -1,6 +1,8 @@
 package com.example.demo;
 
 
+import javax.annotation.PostConstruct;
+
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,7 +14,7 @@ public class BookStoreApplication {
 	
 	public static Logger logger=(Logger) LoggerFactory.getLogger(BookStoreApplication.class);
 	
-	
+	@PostConstruct
 	public void intt(String msg) {
 		logger.info("Application started...");
 		
