@@ -6,14 +6,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import ch.qos.logback.classic.Logger;
-import jakarta.annotation.PostConstruct;
 
 @SpringBootApplication
 public class BookStoreApplication {
 	
 	public static Logger logger=(Logger) LoggerFactory.getLogger(BookStoreApplication.class);
 	
-	@PostConstruct
+	
 	public void intt(String msg) {
 		logger.info("Application started...");
 		
